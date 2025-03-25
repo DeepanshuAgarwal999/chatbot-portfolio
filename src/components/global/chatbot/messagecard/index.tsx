@@ -18,7 +18,7 @@ const Message = ({ isServer, message }: { isServer: boolean, message: string }) 
                     variants={messageVariants}
                 >
                     <Image src={'/images/chatbot.png'} alt='chatbot' width={20} height={20} className='size-8' />
-                    <div className={`w-fit max-w-72 rounded-md bg-black px-4 py-2 ${isServer ? 'self-start' : ''}`}>
+                    <div className={`w-fit max-w-64 rounded-md bg-black px-4 py-2 ${isServer ? 'self-start' : ''}`}>
                         <p className='text-white text-sm break-words'>{message}</p>
                     </div>
                 </Div>
@@ -26,7 +26,7 @@ const Message = ({ isServer, message }: { isServer: boolean, message: string }) 
         case false:
             return (
                 <Div
-                    className={`w-fit max-w-72 rounded-md bg-white px-4 py-2 ${isServer ? '' : 'self-end'}`}
+                    className={`w-fit max-w-64 rounded-md bg-white px-4 py-2 ${isServer ? '' : 'self-end'}`}
                     initial="hidden"
                     animate="visible"
                     variants={messageVariants}
