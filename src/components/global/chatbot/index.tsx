@@ -4,9 +4,7 @@ import React, { useState } from 'react'
 import ChatbotInputField from './chatbot-inputfield'
 import ChatSection from './chatbot-chatsection'
 
-type Props = {}
-
-const Chatbot = (props: Props) => {
+const Chatbot = () => {
     const [chat, setChat] = useState<CHATS>([])
     return (
         <Card className='w-full max-w-[420px]'>
